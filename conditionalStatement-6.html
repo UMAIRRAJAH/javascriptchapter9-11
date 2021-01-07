@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <script>
+//             Write a program to take input the marks obtained in three
+// subjects & total marks. Compute & show the resulting
+// percentage on your page. Take percentage & compute
+// grade as per following table:
+// Show the total marks, marks obtained, percentage, grade &
+// remarks like:
+document.write("<h1>Marks Sheet</h1><br><br><br>");
+        document.write("Total Marks : 300 <br>");
+        var mo = +prompt("Enter Obtained Marks");
+        var percentage = (mo / 300) * 100;
+        document.write("Marks obtained : " + mo +"<br>")
+        document.write("Percentage : " + percentage + "%<br>");
+
+        if (percentage >= 80 && percentage < 100) {
+            document.write("Grade : A1 <br>");
+            document.write("Remarks : Excellent");
+        }
+        else if (percentage >= 70 && percentage < 80) {
+            document.write("Grade : A<br>");
+            document.write("Remarks : Good");
+
+
+        } else if (percentage >= 60 && percentage < 70) {
+            document.write("Grade : B<br>");
+            document.write("Remarks : You need to improve");
+
+        } else if (percentage <60) {
+            document.write("Grade : Fail<br>");
+            document.write("Remarks : Sorry");
+        }else{
+            document.write("enter your valid percentage")
+        }
+      </script>
+</body>
+</html>

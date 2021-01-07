@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+   <script>
+//             Store a secret number (ranging from 1 to 10) in a variable.
+// Prompt user to guess the secret number.
+// a. If user guesses the same number, show “Bingo! Correct
+// answer”.
+// b. If the guessed number +1 is the secret number, show
+// “Close enough to the correct answer”.
+var a = +prompt("Guess the Number");
+var b = 3;
+if (a == b) {
+    document.write("Bingo! Correct answer");
+}else if (a == b+1){
+    document.write("Close Enough");
+}else {
+    document.write("Try Again");
+}
+   </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+
+<body>
+      <script>
+            //             Write a program to create a calculator for +,-,*, / & %
+            // using if statements. Take the following input:
+            // a. First number
+            // b. Second number
+            // c. Operation (+, -, *, /, %)
+            // Compute & show the calculated result to user.
+            var a = +prompt("Enter 1st Number");
+            var b = prompt("Enter the mathematical operator eg: +,-,*,/,%");
+            var c = +prompt("Enter 2nd Number");
+            if (b == "+") {
+                  document.write(a + c);
+            } else if (b == "-") {
+                  document.write(a - c);
+            } else if (b == "*") {
+                  document.write(a * c);
+            } else if (b == "/") {
+                  document.write(a / c);
+            } else if (b == "%") {
+                  document.write(a % c);
+            } else {
+                  document.write("Please enter correct values");
+            }
+      </script>
+</body>
+
+</html>
